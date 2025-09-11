@@ -27,7 +27,7 @@ function Home() {
               </p>
 
               <ul className="hero-list list-unstyled">
-                <li>Skilled in modern JavaScript (ES6+) and React fundamentals</li>
+                <li>Skilled in modern JavaScript and React fundamentals</li>
                 <li>Strong UI/UX sense, including Figma prototyping and accessibility best practices</li>
                 <li>Experienced with backend development using Node.js, Express, and MongoDB</li>
               </ul>
