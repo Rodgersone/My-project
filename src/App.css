@@ -1,0 +1,44 @@
+/* Reset & Base Styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* Makes sure sections aren’t hidden under navbar */
+}
+
+/* Main content adjustment to sit below sticky navbar */
+main {
+  padding-top: 100px;
+}
+
+/* Section Styling */
+section {
+  padding: 80px 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 1.1rem;
+  color: #555;
+}
