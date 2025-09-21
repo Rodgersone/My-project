@@ -1,6 +1,6 @@
 // src/components/Contact.js
 import React, { useState } from "react";
-import { FaPhone, FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaPhone, FaEnvelope, FaLinkedin } from "react-icons/fa";
 import { sendMessage } from "../api/messages";
 import "../styles/Contact.css";
 
@@ -66,49 +66,6 @@ const Contact = () => {
                 LinkedIn
               </a>
             </p>
-            <p>
-              <FaGithub />{" "}
-              <a
-                href="https://github.com/rodgerso318"
-                target="_blank"
-                rel="noreferrer"
-              >
-                GitHub
-              </a>
-            </p>
-
-            {/* Highlighted Projects */}
-            <div className="project-links">
-              <ul>
-                <li>
-                  <a
-                    href="https://github.com/rodgerso318/portfolio-site"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                     Portfolio Website
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/rodgerso318/recipe-explorer"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                     Recipe Explorer
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/rodgerso318/event-booking-system"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                     Event Booking System
-                  </a>
-                </li>
-              </ul>
-            </div>
           </div>
 
           {/* Contact Form */}

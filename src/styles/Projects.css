@@ -12,12 +12,19 @@
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 10px;
+  color: #222;
+  font-weight: 600;
 }
 
 .projects-intro {
   text-align: center;
   color: #555;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+  font-size: 1.1rem;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
 }
 
 .projects-grid {
@@ -29,64 +36,52 @@
 .project-card {
   background-color: #fff;
   border-radius: 12px;
-  padding: 25px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease;
+  padding: 30px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 250px;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
 }
 
 .project-card h3 {
-  font-size: 1.4rem;
-  margin-bottom: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
   color: #007bff;
+  font-weight: 600;
 }
 
 .project-card p {
   margin: 10px 0;
   color: #444;
+  line-height: 1.5;
 }
 
 .tech-stack {
   font-style: italic;
   color: #888;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  margin-top: 8px;
 }
 
-.project-buttons {
+.no-demo {
   margin-top: 15px;
-  display: flex;
-  gap: 10px;
-}
-
-.btn-demo {
-  padding: 8px 16px;
+  font-size: 0.95rem;
+  color: #6c757d; /* muted grey */
+  font-style: italic;
+  background: #f1f3f5;
+  padding: 6px 12px;
   border-radius: 6px;
-  font-weight: 500;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-  background-color: #007bff;
-  color: white;
+  display: inline-block;
 }
 
-.btn-demo:hover {
-  background-color: #0056b3;
-}
-
-/* ✅ Coming Soon button style */
-.btn-coming-soon {
-  border-radius: 6px;
-  background-color: #adb5bd;
-  color: white;
-  font-weight: 500;
-  padding: 8px 16px;
-  cursor: not-allowed;
-  border: none;
-}
-
-/*  Mobile responsive */
+/* Mobile responsive */
 @media (max-width: 768px) {
   .projects-section {
     padding: 40px 15px;
@@ -94,6 +89,7 @@
 
   .projects-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .project-card {
@@ -101,31 +97,24 @@
   }
 
   .project-card h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
-  .tech-stack {
-    font-size: 0.85rem;
-  }
-
-  .project-buttons {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .btn-demo {
-    width: 100%;
-    padding: 10px;
+  .projects-intro {
+    font-size: 1rem;
+    margin-bottom: 30px;
   }
 }
 
-/*  Tablet responsiveness (768px+) */
+/* Tablet and Desktop responsiveness */
 @media (min-width: 768px) {
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+}
 
-  .project-card {
-    padding: 25px;
+@media (min-width: 1100px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

@@ -19,7 +19,7 @@ function About() {
         >
           <img
             src={profileImg}
-            alt="Rodgers - Fullstack Developer"
+            alt="Rodgers - Frontend Developer"
             className="profile-img"
           />
         </div>
@@ -31,22 +31,24 @@ function About() {
         >
           <h2>About Me</h2>
           <p>
-            I’m <strong>Rodgers</strong>, a passionate Fullstack Developer based in Nairobi, Kenya. I enjoy building clean, responsive, and interactive web applications that provide seamless user experiences.
+            I’m <strong>Rodgers</strong>, an aspiring Frontend Developer based in Nairobi, Kenya. 
+            I enjoy creating clean, responsive, and user-friendly web applications that bring ideas to life in the browser.
           </p>
           <p>
-            I work with tools like <strong>React</strong>, <strong>Node.js</strong>, <strong>Express</strong>, and <strong>MongoDB</strong> to deliver real-world fullstack projects. I’m continuously sharpening my skills to create both frontend and backend solutions.
+            My main focus is on building modern interfaces with <strong>JavaScript</strong> and <strong>React.js</strong>. 
+            I also use tools like <strong>Git/GitHub</strong> for collaboration and <strong>Figma</strong> for basic design work. 
+            Currently, I’m developing projects such as a portfolio website, an event booking system, and a mini e-commerce platform to strengthen my skills.
           </p>
-
           <p>
-            I care deeply about writing clean code, crafting great design, and learning continuously. Here’s what I’m currently using:
+            I’m committed to writing clean code, improving my problem-solving abilities, and continuously learning new technologies to grow as a developer.
           </p>
 
           <ul>
             <li> HTML, CSS, JavaScript (ES6+)</li>
-            <li> React & Hooks</li>
-            <li> Node.js, Express & MongoDB</li>
-            <li> Bootstrap, Git & GitHub</li>
-            <li> Basic UI/UX with Figma</li>
+            <li> React.js & Hooks</li>
+            <li> Responsive Web Design</li>
+            <li> Git & GitHub</li>
+            <li> Basic Figma for design concepts</li>
           </ul>
         </div>
       </div>

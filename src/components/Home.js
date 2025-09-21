@@ -6,12 +6,14 @@ function Home() {
 
   const handleExploreClick = () => {
     setBtnLoading(true);
+
+    // Wait 2 seconds, then scroll to Projects section
     setTimeout(() => {
       const projectSection = document.getElementById('projects');
       if (projectSection) {
         projectSection.scrollIntoView({ behavior: 'smooth' });
       }
-      setBtnLoading(false);
+      setBtnLoading(false); // reset button loading state
     }, 2000);
   };
 

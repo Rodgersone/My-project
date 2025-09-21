@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react"; 
+// src/components/Projects.js
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../styles/Projects.css";
@@ -9,29 +10,29 @@ function Projects() {
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
 
-    // Fetch projects from live backend on Render
+    // Fetch projects from backend
     fetch("https://portfolio-project-backend-ohd2.onrender.com/api/projects")
       .then((res) => res.json())
       .then((data) => setProjects(data))
       .catch((err) => {
         console.error("Error fetching projects:", err);
-        // fallback projects if fetch fails
+        // ✅ Fallback projects aligned with CV
         setProjects([
           {
             id: 1,
-            title: "Recipe Explorer",
-            description: "A responsive recipe browsing app built with React.",
-            tech: "React, Bootstrap",
-            status: "live",
-            demo: "https://recipe-explorer-rodgers.netlify.app",
+            title: "Event Booking System",
+            description:
+              "A fullstack platform that allows users to explore events, book tickets, and manage reservations with secure authentication.",
+            tech: "React, Node.js, MongoDB, Express",
+            status: "in-progress",
           },
           {
             id: 2,
-            title: "Blog Platform",
-            description: "Node.js backend with MongoDB + React frontend.",
-            tech: "Node.js, MongoDB, React",
-            status: "live", // updated from "coming-soon"
-            demo: "https://resonant-zuccutto-f40c77.netlify.app", // add your deployed frontend link
+            title: "E-Commerce Platform",
+            description:
+              "A mini e-commerce solution with product listings, cart functionality, and checkout flow — focused on clean UI and usability.",
+            tech: "React, Node.js, MongoDB",
+            status: "in-progress",
           },
         ]);
       });
@@ -59,24 +60,7 @@ function Projects() {
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
                 <p className="tech-stack">{project.tech}</p>
-                <div className="project-buttons">
-                  {project.status === "coming-soon" ? (
-                    <button className="btn-coming-soon" disabled>
-                      Coming Soon
-                    </button>
-                  ) : (
-                    project.demo && (
-                      <a
-                        href={project.demo}
-                        className="btn-demo"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Demo
-                      </a>
-                    )
-                  )}
-                </div>
+                <p className="no-demo">Demo not available yet</p>
               </div>
             ))
           ) : (

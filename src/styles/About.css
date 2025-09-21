@@ -19,13 +19,14 @@
   align-items: center;
 }
 
-.about-image img {
+.about-image img,
+.profile-img {
   width: 100%;
-  max-width: 400px; /* limit max width on all screens */
+  max-width: 380px; /* slightly smaller for balance */
   height: auto;
   object-fit: cover;
   border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* softer, more modern shadow */
 }
 
 .about-text {
@@ -34,58 +35,61 @@
 }
 
 .about-text h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 2.3rem; /* a bit smaller for balance */
+  margin-bottom: 15px;
+  color: #222;
 }
 
 .about-text p {
-  font-size: 1.1rem;
-  color: #444;
-  margin-bottom: 15px;
+  font-size: 1.05rem;
+  color: #555;
+  margin-bottom: 12px;
+  line-height: 1.6; /* easier reading */
 }
 
 .about-text ul {
   list-style: none;
   padding: 0;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .about-text ul li {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-weight: 500;
+  color: #333;
 }
 
 /* Responsive Fix */
 
 @media (max-width: 768px) {
   .about-section {
-    padding: 20px 15px 40px 15px; /* tighter padding */
+    padding: 30px 15px 50px 15px; /* better spacing */
   }
 
   .about-text h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .about-text p,
   .about-text ul li {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
-  /* Center text and image on mobile */
   .about-text {
     padding: 0 1rem;
   }
 
-  .about-image img {
-    max-width: 90%; /* prevent image from being too wide */
-    max-height: 300px; /* limit height */
+  .about-image img,
+  .profile-img {
+    max-width: 85%; /* keep image centered and not oversized */
+    max-height: 280px;
   }
 }
 
 @media (min-width: 768px) {
   .about-container {
     flex-direction: row;
-    align-items: stretch;
+    align-items: center;
     text-align: left;
   }
 
@@ -93,19 +97,8 @@
     padding: 20px;
   }
 
-  .about-image img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    max-height: 400px;
+  .about-image img,
+  .profile-img {
+    max-height: 380px;
   }
 }
-.profile-img {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
