@@ -23,15 +23,15 @@ function Home() {
         <div className="row justify-content-center text-center">
           <div className="col-lg-8">
             <div className="hero-content">
-              <h1>Hi, I'm Rodgers — Fullstack Developer based in Nairobi</h1>
+              <h1>Hi, I'm Rodgers — Frontend Developer based in Nairobi</h1>
               <p className="hero-sub">
-                I build responsive and interactive web applications using React, Node.js, and modern UI/UX practices.
+                I design and build responsive, user-friendly web applications with React.js, JavaScript, and modern UI practices.
               </p>
 
               <ul className="hero-list list-unstyled">
-                <li>Skilled in modern JavaScript and React fundamentals</li>
-                <li>Strong UI/UX sense, including Figma prototyping and accessibility best practices</li>
-                <li>Experienced with backend development using Node.js, Express, and MongoDB</li>
+                <li>Proficient in JavaScript and React.js fundamentals</li>
+                <li>Experience with responsive design, accessibility, and clean UI/UX</li>
+                <li>Familiar with backend basics: Node.js, Express, and MongoDB</li>
               </ul>
 
               <button

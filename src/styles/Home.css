@@ -10,7 +10,7 @@
 
 .hero-content {
   max-width: 700px;
-  padding: 0 1rem; /* ✅ Add horizontal padding for all screens */
+  padding: 0 1rem; /* Add horizontal padding for all screens */
 }
 
 .hero-content h1 {
